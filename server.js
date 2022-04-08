@@ -18,14 +18,15 @@ app.use('/', routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/escape',
+  "mongodb+srv://jmontalv:Jolumofe1@cluster0.bwxev.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false
   }
-);
+).then(() => console.log( 'Database Connected' ))
+.catch(err => console.log( err ));
 
 // Send every request to the React app
 // Define API routes before this runs

@@ -68,16 +68,16 @@ function App() {
     function handleSignUpSubmit(event) {
         event.preventDefault();
         API.createUser({
-            firstName: formObject.firstName,
-            lastName: formObject.lastName,
-            username: formObject.username,
-            password: formObject.password,
+            firstName: "f",
+            lastName: "f",
+            username: "f",
+            password: "f",
             puzzles: puzzleSeed
         })
         .then(() => {
           API.checkUser({
-            username: formObject.username,
-            password: formObject.password
+            username: "f",
+            password: "f"
           })
           .then(res => {
               setJwt(res.data.token)

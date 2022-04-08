@@ -4,9 +4,10 @@ const db = require("../models");
 // This file empties the Puzzle collection and inserts the puzzles below
 
 mongoose.connect(
-  process.env.MONGODB_URI ||
-  "mongodb://localhost/escape"
-);
+  // process.env.MONGODB_URI ||
+  "mongodb+srv://jmontalv:Jolumofe1@cluster0.bwxev.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+).then(() => console.log( 'Database Connected' ))
+.catch(err => console.log( err ));
 
 const puzzleSeed = [
   {

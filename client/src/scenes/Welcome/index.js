@@ -25,7 +25,7 @@ function Welcome (props) {
                         <Card>
                             <form>
                                 <div className="form-group">
-                                    <div className="formTitle">Sign Up</div>
+                                    {/* <div className="formTitle">Sign Up</div>
                                     <div className="input-group mb-3">
                                         <input onChange={props.handleInputChange} name="firstName" type="text" className="form-control" placeholder="First Name" aria-label="First Name"/>
                                     </div>
@@ -37,7 +37,7 @@ function Welcome (props) {
                                     </div>
                                     <div className="input-group mb-3">
                                         <input onChange={props.handleInputChange} name="password" type="password" className="form-control" placeholder="Password" aria-label="Password"/>
-                                    </div>
+                                    </div> */}
                                     <button type="submit" onClick={props.handleSignUpSubmit} className="btn btn-warning">
                                         Sign Up
                                     </button>
@@ -49,7 +49,7 @@ function Welcome (props) {
                         <Card>
                             <form>
                                 <div className="form-group">
-                                    <div className="formTitle">Log In</div>
+                                    {/* <div className="formTitle">Log In</div>
                                     <div className="input-group mb-3">
                                         <input onChange={props.handleInputChange} name="username" type="text" className="form-control" placeholder="Username" aria-label="Username"/>
                                     </div>
@@ -62,7 +62,7 @@ function Welcome (props) {
                                         className="btn btn-warning"
                                     >
                                         Log In
-                                    </button>
+                                    </button> */}
                                 </div>
                             </form>
                         </Card>
